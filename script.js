@@ -11,7 +11,7 @@ function run() {
 
   interval = setInterval(() => {
     next();
-  }, 1000);
+  }, 500);
 }
 
 function next(isToDetails = false) {
