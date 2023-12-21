@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hi there!</title>
+</head>
+<body onload="run()">
+  <!-- <audio autoplay="true" src="friends_01 - The Rembrandts - Ill Be There For You.mp3"></audio> -->
+  <section class="container">
+    <div class="screen greeting">
+      <figure class="image-container">
+        <img src="img/greeting.png" alt="hello">
+      </figure>  
+    </div>
+
+    <div class="screen be-there hidden">
+      <figure class="image-container">
+        <img src="img/be_there.png" alt="be there">
+      </figure>
+
+      <br>
+      <br>
+      <br>
+
+      <figure class="image-container">
+        <img src="img/for_you.png" alt="be there">
+      </figure>
+    </div>
+
+    <div class="screen weeks hidden">
+      <figure class="image-container">
+        <img src="img/something.png" alt="hello">
+      </figure>
+
+      <br>
+      <br>
+      
+      <figure class="image-container">
+        <img src="img/couple.png" alt="hello">
+      </figure>
+
+      <br>
+      <br>
+
+      <figure class="image-container">
+        <img src="img/weeks.png" alt="hello">
+      </figure>
+    </div>
+
+    <div class="screen greeting hidden">
+      <figure class="image-container">
+        <img src="img/smile.jpg" alt="hello">
+      </figure>
+
+      <button class="button" role="button" onclick="toDetails()">Wanna know more?</button>
+    </div>
+
+    <div class="screen greeting hidden">
+      <div class="image-container">
+        <img src="img/delivery.png" alt="hello">
+      </div>
+
+      <button class="button" role="button" onclick="restart()">Play again</button>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
