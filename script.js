@@ -5,13 +5,28 @@ const STATE = {
 
 let interval = undefined;
 
-function run() {
+function start() {
+  runScreens();
+}
+
+function runScreens() {
   console.log('Starting app...');
+
+  const audio = document.querySelector('audio');
+
+  audio.play()
+    .then(_ => {})
+    .catch(err => {
+      console.log(err);
+    });
+
   STATE.screens = document.querySelectorAll('.screen');
+
+  next();
 
   interval = setInterval(() => {
     next();
-  }, 3000);
+  }, 3650);
 }
 
 function next(isToDetails = false) {

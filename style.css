@@ -10,7 +10,6 @@ html, body {
 
 .container {
   width: 100vw;
-  /* height: 100vh; */
   min-height: 100vh;
   background-color: lightcyan;
   display: flex;
@@ -34,14 +33,6 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-
-.screen.greeting {}
-
-.screen.be-there {}
-
-.screen.greeting {}
-
-.screen.greeting {}
 
 .button {
   appearance: button;
@@ -69,6 +60,7 @@ html, body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  scale: 1.25;
 }
 
 .button:disabled {

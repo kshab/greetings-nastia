@@ -7,13 +7,24 @@
   <link rel="stylesheet" href="style.css">
   <title>Hi there!</title>
 </head>
-<body onload="run()">
-  <audio autoplay="true" src="friends_01 - The Rembrandts - Ill Be There For You.mp3"></audio>
+<body>
+  <audio src="friends_01 - The Rembrandts - Ill Be There For You.mp3"></audio>
+
   <section class="container">
-    <div class="screen greeting">
+    <div class="screen run">
+      <button class="button" onclick="start()">Run!</button>
+    </div>
+
+    <div class="screen greeting hidden">
       <figure class="image-container">
         <img src="img/greeting.png" alt="hello">
       </figure>  
+    </div>
+
+    <div class="screen greeting hidden">
+      <figure class="image-container">
+        <img src="img/know_what.png" alt="hello">
+      </figure>
     </div>
 
     <div class="screen be-there hidden">
@@ -50,7 +61,7 @@
       </figure>
     </div>
 
-    <div class="screen greeting hidden">
+    <div class="screen chandler hidden">
       <figure class="image-container">
         <img src="img/smile.jpg" alt="hello">
       </figure>
@@ -58,10 +69,20 @@
       <button class="button" role="button" onclick="toDetails()">Wanna know more?</button>
     </div>
 
-    <div class="screen greeting hidden">
+    <div class="screen delivery hidden">
       <div class="image-container">
         <img src="img/delivery.png" alt="hello">
       </div>
+
+      <br>
+      <br>
+
+      <figure class="image-container">
+        <img src="img/see_you.png" alt="hello">
+      </figure>
+
+      <br>
+      <br>
 
       <button class="button" role="button" onclick="restart()">Play again</button>
     </div>
